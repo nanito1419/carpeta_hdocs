@@ -1,0 +1,39 @@
+#include<iostream>
+#include<math.h>
+#include<conio.h>
+
+using namespace std;
+
+int main(){
+	int matriz[100][100],rex,exp,i,a,j;
+	
+	exp=-1;
+	
+	
+	//Rellenando la matriz	
+	for(i=0;i<4;i++){
+                a= pow (2,i);                   
+		for(j=0;j<a;j++){
+                          
+			cout<<"Digite un numero ["<<i<<"]["<<j<<"]: ";
+			cin>>matriz[i][j];
+				
+		
+	} }
+	
+	cout<<"\nMostrando matriz\n\n";
+	
+	for(i=0;i<4;i++){
+                a= pow (2,i);                        
+		for(j=0;j<a;j++){
+                         
+			cout<<"  "<<matriz[i][j];
+		}
+		cout<<"\n";
+	}
+	
+	
+	getch();
+	system("pause");
+	return 0;
+}
